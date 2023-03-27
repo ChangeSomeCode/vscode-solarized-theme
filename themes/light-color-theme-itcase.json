@@ -61,9 +61,16 @@
         "meta.objectliteral.js variable.other.property.js",
         "variable.other.readwrite.js",
         "variable.language.this.js",
-        "meta.var.expr.js",
+        //"meta.var.expr.js",
         "source.js variable.other.property.js"
       ],
+      "settings": {
+        "foreground": "#268BD2"
+      }
+    },
+    {
+      "name": ">>> variable problem <<<",
+      "scope": ["meta.var.expr.js"],
       "settings": {
         "foreground": "#268BD2"
       }
@@ -562,6 +569,7 @@
       "name": "JS: Function Name",
       "scope": [
         "meta.function.js entity.name.function",
+        "meta.export.default.js entity.name.function",
         "meta.object-literal.key.js entity.name.function"
       ],
       "settings": { "foreground": "#A57800" }
