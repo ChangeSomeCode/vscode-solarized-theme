@@ -61,8 +61,33 @@
         "meta.objectliteral.js variable.other.property.js",
         "variable.other.readwrite.js",
         "variable.language.this.js",
-        //"meta.var.expr.js",
-        "source.js variable.other.property.js"
+        "source.js variable.other.property.js",
+        // "meta.var.expr.js",
+        "meta.definition.variable.ts",
+        "meta.definition.property.ts",
+        "meta.template.expression.ts",
+        "meta.function-call.ts variable.other.object.ts",
+        "meta.function-call.ts variable.other.object.property.ts",
+        "support.variable.property.ts",
+        "variable.other.object.ts",
+        "variable.other.object.property.ts",
+        "meta.objectliteral.ts variable.other.property.ts",
+        "variable.other.readwrite.ts",
+        "variable.language.this.ts",
+        "source.ts variable.other.property.ts",
+
+        "meta.definition.variable.tsx",
+        "meta.definition.property.tsx",
+        "meta.template.expression.tsx",
+        "meta.function-call.tsx variable.other.object.tsx",
+        "meta.function-call.tsx variable.other.object.property.tsx",
+        "support.variable.property.tsx",
+        "variable.other.object.tsx",
+        "variable.other.object.property.tsx",
+        "meta.objectliteral.tsx variable.other.property.tsx",
+        "variable.other.readwrite.tsx",
+        "variable.language.this.tsx",
+        "source.tsx variable.other.property.tsx"
       ],
       "settings": {
         "foreground": "#268BD2"
@@ -70,7 +95,7 @@
     },
     {
       "name": ">>> variable problem <<<",
-      "scope": ["meta.var.expr.js"],
+      "scope": ["meta.var.expr.js", "meta.var.expr.ts", "meta.var.expr.tsx"],
       "settings": {
         "foreground": "#268BD2"
       }
@@ -84,7 +109,7 @@
     },
     {
       "name": "Meta import",
-      "scope": ["meta.import.js"],
+      "scope": ["meta.import.js", "meta.import.ts", "meta.import.tsx"],
       "settings": {
         "foreground": "#268BD2"
       }
@@ -107,7 +132,7 @@
 
     {
       "name": "Class name",
-      "scope": ["meta.class.js"],
+      "scope": ["meta.class.js", "meta.class.ts", "meta.class.tsx"],
       "settings": {
         "foreground": "#268BD2"
       }
@@ -137,7 +162,11 @@
       "scope": [
         "punctuation.definition.variable",
         "punctuation.definition.template-expression.begin.js",
-        "punctuation.definition.template-expression.end.js"
+        "punctuation.definition.template-expression.end.js",
+        "punctuation.definition.template-expression.begin.ts",
+        "punctuation.definition.template-expression.end.ts",
+        "punctuation.definition.template-expression.begin.tsx",
+        "punctuation.definition.template-expression.end.tsx"
       ],
       "settings": {
         "foreground": "#859900"
@@ -183,7 +212,7 @@
     },
     {
       "name": "Function argument",
-      "scope": "variable.parameter.js",
+      "scope": ["variable.parameter.js", "variable.parameter.ts", "variable.parameter.tsx"],
       "settings": {
         "foreground": "#586E75"
       }
@@ -230,7 +259,7 @@
     },
     {
       "name": "JS: object key-value separator(:)",
-      "scope": "punctuation.separator.key-value.js",
+      "scope": ["punctuation.separator.key-value.js", "punctuation.separator.key-value.ts", "punctuation.separator.key-value.tsx"],
       "settings": {
         "foreground": "#CB4B16"
       }
@@ -248,7 +277,15 @@
         "support.class.console.js",
         "support.variable.console.js",
         "support.objects.console.js",
-        "variable.language.console.js"
+        "variable.language.console.js",
+        "support.class.console.ts",
+        "support.variable.console.ts",
+        "support.objects.console.ts",
+        "variable.language.console.ts",
+        "support.class.console.tsx",
+        "support.variable.console.tsx",
+        "support.objects.console.tsx",
+        "variable.language.console.tsx"
       ],
       "settings": {
         "foreground": "#859900"
@@ -257,7 +294,7 @@
 
     {
       "name": "Library methods",
-      "scope": ["meta.definition.method.js"],
+      "scope": ["meta.definition.method.js", "meta.definition.method.ts", "meta.definition.method.tsx"],
       "settings": {
         "foreground": "#B58900"
       }
@@ -405,7 +442,7 @@
       }
     },
     {
-      "scope": "meta.export.default.js storage.modifier.js",
+      "scope": ["meta.export.default.js storage.modifier.js", "meta.export.default.ts storage.modifier.ts", "meta.export.default.tsx storage.modifier.tsx"],
       "settings": {
         "foreground": "#073642",
         "fontStyle": "bold"
@@ -425,12 +462,6 @@
       }
     },
     {
-      "scope": "source.ts",
-      "settings": {
-        "foreground": "#657b83"
-      }
-    },
-    {
       "scope": "meta.function-call",
       "settings": {
         "foreground": "#657b83"
@@ -438,12 +469,6 @@
     },
     {
       "scope": "meta.import",
-      "settings": {
-        "foreground": "#657b83"
-      }
-    },
-    {
-      "scope": "source.ts",
       "settings": {
         "foreground": "#657b83"
       }
@@ -493,37 +518,39 @@
     {
       "name": "JS: String",
       "scope": [
-        "string.quoted.js",
-        "string.quoted.jsx",
+        "string.quoted",
         "string.quoted.single",
-        "string.quoted.single.js",
-        "string.quoted.single.jsx",
-        "string.quoted.double",
-        "string.quoted.double.js",
-        "string.quoted.double.jsx"
+        "string.quoted.double"
       ],
       "settings": { "foreground": "#269186" }
     },
     {
       "name": "JS: round brace",
-      "scope": "meta.brace.round.js",
+      "scope": ["meta.brace.round.js", "meta.brace.round.ts", "meta.brace.round.tsx"],
       "settings": { "foreground": "#93A1A1" }
     },
     {
       "name": "JS: round brace",
-      "scope": "meta.brace.square.js",
+      "scope": ["meta.brace.square.js", "meta.brace.square.ts", "meta.brace.square.tsx"],
       "settings": { "foreground": "#586E75" }
     },
     {
       "name": "JS: Tag name",
-      "scope": "entity.name.tag.js",
+      "scope": ["entity.name.tag.js", "entity.name.tag.ts", "entity.name.tag.tsx"],
       "settings": {
         "fontStyle": "bold"
       }
     },
     {
       "name": "JS: punctuation in jsx body",
-      "scope": ["punctuation.accessor.js", "punctuation.accessor.optional.js"],
+      "scope": [
+        "punctuation.accessor.js",
+        "punctuation.accessor.optional.js",
+        "punctuation.accessor.ts",
+        "punctuation.accessor.optional.ts",
+        "punctuation.accessor.tsx",
+        "punctuation.accessor.optional.tsx"
+      ],
       "settings": {
         "foreground": "#859900"
       }
@@ -533,18 +560,24 @@
       "scope": [
         "punctuation.definition.block.js",
         "punctuation.definition.binding-pattern.object.js",
-        "punctuation.separator.comma.js"
+        "punctuation.separator.comma.js",
+        "punctuation.definition.block.ts",
+        "punctuation.definition.binding-pattern.object.ts",
+        "punctuation.separator.comma.ts",
+        "punctuation.definition.block.tsx",
+        "punctuation.definition.binding-pattern.object.tsx",
+        "punctuation.separator.comma.tsx"
       ],
       "settings": { "foreground": "#586E75" }
     },
     {
       "name": "JS: Function keyword",
-      "scope": "storage.type.function.js",
+      "scope": ["storage.type.function.js", "storage.type.function.ts", "storage.type.function.tsx"],
       "settings": { "foreground": "#268BD2" }
     },
     {
       "name": "JS: const/let/constructor keyword",
-      "scope": "storage.type.js",
+      "scope": ["storage.type.js", "storage.type.ts", "storage.type.tsx"],
       "settings": {
         "fontStyle": "bold",
         "foreground": "#268BD2"
@@ -552,17 +585,21 @@
     },
     {
       "name": "JS: Function call",
-      "scope": "meta.function-call.js entity.name.function.js",
+      "scope": [
+        "meta.function-call.js entity.name.function.js",
+        "meta.function-call.ts entity.name.function.ts",
+        "meta.function-call.tsx entity.name.function.tsx"
+      ],
       "settings": { "foreground": "#586e75" }
     },
     {
       "name": "JS: Object key",
-      "scope": "meta.object-literal.key.js",
+      "scope": ["meta.object-literal.key.js", "meta.object-literal.key.ts", "meta.object-literal.key.tsx"],
       "settings": { "foreground": "#586e75" }
     },
     {
       "name": "JS: Function Name",
-      "scope": "meta.definition.function.js",
+      "scope": ["meta.definition.function.js", "meta.definition.function.ts", "meta.definition.function.tsx"],
       "settings": { "foreground": "#268BD2" }
     },
     {
@@ -570,23 +607,33 @@
       "scope": [
         "meta.function.js entity.name.function",
         "meta.export.default.js entity.name.function",
-        "meta.object-literal.key.js entity.name.function"
+        "meta.object-literal.key.js entity.name.function",
+        "meta.function.ts entity.name.function",
+        "meta.export.default.ts entity.name.function",
+        "meta.object-literal.key.ts entity.name.function",
+        "meta.function.tsx entity.name.function",
+        "meta.export.default.tsx entity.name.function",
+        "meta.object-literal.key.tsx entity.name.function"
       ],
       "settings": { "foreground": "#A57800" }
     },
     {
       "name": "JS: Function arrow",
-      "scope": "storage.type.function.arrow.js",
+      "scope": ["storage.type.function.arrow.js", "storage.type.function.arrow.ts", "storage.type.function.arrow.tsx"],
       "settings": { "foreground": "#073642" }
     },
     {
       "name": "JS: Source",
-      "scope": "text.html.basic source.js.embedded.html",
+      "scope": [
+        "text.html.basic source.js.embedded.html",
+        "text.html.basic source.ts.embedded.html",
+        "text.html.basic source.tsx.embedded.html"
+      ],
       "settings": { "foreground": "#A57800" }
     },
     {
       "name": "JS: Library class component(React in html)",
-      "scope": ["support.class.component.js"],
+      "scope": ["support.class.component.js", "support.class.component.ts", "support.class.component.tsx"],
       "settings": { "foreground": "#268BD2" }
     },
 

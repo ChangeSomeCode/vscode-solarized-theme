@@ -1,6 +1,6 @@
 {
     "name": "itcase-solarized",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "displayName": "ItCase-Solarized",
     "description": "Optimized Solarized theme for VS Code",
     "publisher": "ChangeSomeCode",
@@ -13,7 +13,7 @@
         "light"
     ],
     "engines": {
-        "vscode": "^1.75.1"
+        "vscode": "^1.93.1"
     },
     "categories": [
         "Themes"
@@ -33,6 +33,6 @@
         ]
     },
     "dependencies": {
-        "@vscode/vsce": "^2.18.0"
+        "@vscode/vsce": "^3.1.0"
     }
 }
